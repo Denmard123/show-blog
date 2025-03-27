@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="theme.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class' // Pakai mode class agar bisa diubah manual
+        };
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200">
+    <header class="bg-gray-900 text-white py-6 text-center text-3xl font-bold shadow-md flex justify-between items-center px-6">
+        <span>Tentang</span>
+        <div class="flex items-center space-x-4">
+            <a href="https://facebook.com" target="_blank" class="text-white hover:text-blue-400">
+                <i data-lucide="facebook" class="h-6 w-6"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white hover:text-pink-400">
+                <i data-lucide="instagram" class="h-6 w-6"></i>
+            </a>
+        </div>
+    </header>
+    
+    <nav class="bg-gray-800 text-gray-200 py-3 flex justify-center space-x-8 shadow-md">
+        <a href="index.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            Home
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="catalog.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            Katalog
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="about.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            About
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </nav>
+    
+    
+    <main class="max-w-4xl mx-auto p-6 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Kenapa Blog Ini Ada?</h2>
+        <p class="text-gray-700 dark:text-gray-400 leading-relaxed italic">
+            Pernah merasa ada begitu banyak hal di kepala, tapi sulit menemukan tempat yang tepat untuk menuangkannya?  
+            Kadang bukan karena tak ada yang mau mendengar, tapi karena beberapa hal hanya bisa benar-benar dimengerti lewat tulisan.
+        </p>
+        <p class="text-gray-700 dark:text-gray-400 leading-relaxed mt-4">
+            Blog ini bukan sekadar tempat untuk berbicara, tapi ruang untuk segala yang sulit diungkapkan.  
+            Keresahan, kebingungan, atau perasaan yang tak menemukan bentuknya—semua bisa dituangkan tanpa takut dihakimi.
+        </p>
+        <p class="text-gray-700 dark:text-gray-400 leading-relaxed mt-4">
+            Dengan menulis, aku belajar memahami diri sendiri.  
+            Kata-kata menjadi pijakan, tulisan menjadi arah,  
+            dan setiap kalimat yang tertulis adalah langkah kecil untuk terus berjalan.  
+            Jika kamu pernah merasa tenggelam dalam pikiranmu sendiri,  
+            semoga di sini, kamu menemukan sesuatu—ketenangan, pemahaman, atau sekadar teman dalam sunyi.
+        </p>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

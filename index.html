@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="theme.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class' // Pastikan Tailwind pakai class, bukan media query
+        };
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+    <header class="bg-gray-900 text-white py-6 text-center text-3xl font-bold shadow-md flex justify-between items-center px-6">
+        <span>Dashboard</span>
+        <div class="flex items-center space-x-4">
+            <a href="https://facebook.com" target="_blank" class="text-white hover:text-blue-400">
+                <i data-lucide="facebook" class="h-6 w-6"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white hover:text-pink-400">
+                <i data-lucide="instagram" class="h-6 w-6"></i>
+            </a>
+            <button onclick="toggleDarkMode()" class="p-2 bg-gray-700 hover:bg-gray-600 rounded-full">
+                <i id="theme-icon" data-lucide="moon" class="h-6 w-6 text-white"></i>
+            </button>            
+        </div>
+    </header>
+    
+    <nav class="bg-gray-800 text-gray-200 py-3 flex justify-center space-x-8 shadow-md">
+        <a href="index.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            Home
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="catalog.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            Katalog
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="about.html" class="relative group text-gray-300 hover:text-white transition duration-300">
+            About
+            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </nav>
+    
+    
+    
+    <main class="max-w-4xl mx-auto p-6 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-gray-200 dark:bg-gray-800 p-6 shadow-md rounded-lg flex flex-col items-center">
+                <i data-lucide="user" class="h-6 w-6 text-gray-700 dark:text-gray-300 mb-2"></i>
+                <h3 class="text-lg font-semibold">Me and ?</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Sebuah perjalanan audio yang mengajakmu menyelami kebingungan, pertanyaan, dan makna yang tak selalu punya jawaban.
+                </p>
+            </div>
+            <div class="bg-gray-200 dark:bg-gray-800 p-6 shadow-md rounded-lg flex flex-col items-center">
+                <i data-lucide="heart-crack" class="h-6 w-6 text-gray-700 dark:text-gray-300 mb-2"></i>
+                <h3 class="text-lg font-semibold">Trauma</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Luka yang tak terlihat, suara yang tak selalu terdengar. Ini bukan sekadar cerita, ini rasa yang pernah ada dan masih membekas.
+                </p>
+            </div>
+            <div class="bg-gray-200 dark:bg-gray-800 p-6 shadow-md rounded-lg flex flex-col items-center">
+                <i data-lucide="message-circle" class="h-6 w-6 text-gray-700 dark:text-gray-300 mb-2"></i>
+                <h3 class="text-lg font-semibold">Deep Talk</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Kata-kata yang tak selalu terucap, tapi tetap ingin disampaikan. Tentang hidup, kehilangan, dan apa yang sering kita sembunyikan.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
